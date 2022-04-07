@@ -1,0 +1,172 @@
+package br.com.generation.Exercicio;
+
+public class Cliente {
+	
+	//Atributos --> Variáveis
+	String nome;
+	String profissao;
+	String endereco;
+	int numCadastro;
+	
+	//Métodos --> verbos --> ação
+	void comprar() {
+		System.out.println("O Cliente, " + nome + " está comprando um produto...");
+	}
+	
+	void trocar() {
+		System.out.println("O cliente, " + nome + " está insatisfeito e solicita a troca!");
+	}
+
+}
+
+ TesteCliente
+
+package br.com.generation.Exercicio;
+
+public class TesteCliente {
+
+	public static void main(String[] args) {
+				//objeto
+		Cliente cl = new Cliente();
+		
+		cl.nome = "Roberval";
+		cl.endereco = "Rua otavinio, 77";
+		cl.profissao = "Esteticista Automotivo";
+		cl.numCadastro = 1925895;
+		
+		System.out.println();
+		System.out.println("Nome: " + cl.nome);
+		System.out.println("Endereço: " + cl.endereco);
+		System.out.println("Profissão: " + cl.profissao);
+		System.out.println("Numero de cadastro: " + cl.numCadastro);
+		
+		
+		cl.comprar();
+		
+		System.out.println();
+		System.out.println("Nome: " + cl.nome);
+		System.out.println("Endereço: " + cl.endereco);
+		System.out.println("Profissão: " + cl.profissao);
+		System.out.println("Numero de cadastro: " + cl.numCadastro);
+
+		cl.trocar();
+	}
+
+}
+
+
+
+Exercicio 2 
+
+Aviao
+
+package br.com.generation.Exercicio2;
+
+public class Aviao {
+	
+	//Atributos --> variaveis
+	String modelo;
+	String empresa;
+	int capaciPassageiro;
+	
+	//Métodos --> verbos --> ações
+	void decolar() {
+		System.out.println("Senhores passageiros, trave os sintos, iremos decolar!!");
+	}
+	
+	void pousar() {
+		System.out.println("Senhores passageiros, vamos pousar!!");
+	}
+
+}
+
+testeAviao
+
+package br.com.generation.Exercicio2;
+
+public class TesteAviao {
+
+	public static void main(String[] args) {
+		
+		Aviao avi = new Aviao();
+		
+		avi.modelo = "Boyng 727";
+		avi.empresa = "LuftWäffe";
+		avi.capaciPassageiro = 650;
+		
+		System.out.println();
+		System.out.println("O avião " + avi.modelo + " vai para Deutschland ");
+		System.out.println("A empresa " + avi.empresa + " es ist den gut interprise! ");
+		System.out.println("Capacidade máxima de passageiros é:" + avi.capaciPassageiro);
+		
+		avi.decolar();
+		
+		System.out.println();
+		System.out.println("O avião " + avi.modelo + " está a chegar em Deutschland ");
+		System.out.println("A empresa " + avi.empresa + " é a melhor empresa ");
+		System.out.println("Capacidade máxima de passageiros é:" + avi.capaciPassageiro);
+		
+		avi.pousar();
+		
+
+	}
+
+}
+
+
+
+
+Produto
+
+package br.com.generation.Exercicio3;
+
+public class ProdutoEletro {
+	
+	//Atributos --> variaveis
+	String tipoProd;
+	String marca;
+	String modelo;
+	
+	//Método --> ação --> verbo
+	void liga() {
+		System.out.println("Olá seja bem-vindo ao meu Sistema!! ");
+	}
+	
+	void desliga() {
+		System.out.println("Muito obrigado por me utilizar ;)");
+	}
+
+}
+
+
+TesteProfuto
+
+package br.com.generation.Exercicio3;
+
+public class TesteProdutoEletro {
+
+	public static void main(String[] args) {
+		
+		ProdutoEletro tv = new ProdutoEletro();
+		
+		tv.tipoProd = "Televisão";
+		tv.marca = "Sony";
+		tv.modelo = "Exy4456";
+		
+		System.out.println();
+		System.out.println(tv.tipoProd + " Ótima escolha!!! ");
+		System.out.println("Excelente marca para imagens UHD 4K" + tv.marca);
+		System.out.println("Esse é o modelo " + tv.modelo);
+		System.out.println();
+		
+		tv.liga();
+		
+		System.out.println();
+		System.out.println("Por favor me desligue estou sobrecarregado!!!:( ");
+		System.out.println();
+		
+		tv.desliga();
+
+	}
+
+}
